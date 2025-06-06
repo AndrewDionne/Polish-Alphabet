@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polish Alphabet Flip Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card .letter {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .card button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="letter">A</div>
+        <button onclick="playAudio('A')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ą</div>
+        <button onclick="playAudio('Ą')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">B</div>
+        <button onclick="playAudio('B')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">C</div>
+        <button onclick="playAudio('C')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ć</div>
+        <button onclick="playAudio('Ć')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">D</div>
+        <button onclick="playAudio('D')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">E</div>
+        <button onclick="playAudio('E')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ę</div>
+        <button onclick="playAudio('Ę')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">F</div>
+        <button onclick="playAudio('F')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">G</div>
+        <button onclick="playAudio('G')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">H</div>
+        <button onclick="playAudio('H')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">I</div>
+        <button onclick="playAudio('I')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">J</div>
+        <button onclick="playAudio('J')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">K</div>
+        <button onclick="playAudio('K')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">L</div>
+        <button onclick="playAudio('L')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ł</div>
+        <button onclick="playAudio('Ł')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">M</div>
+        <button onclick="playAudio('M')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">N</div>
+        <button onclick="playAudio('N')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ń</div>
+        <button onclick="playAudio('Ń')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">O</div>
+        <button onclick="playAudio('O')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ó</div>
+        <button onclick="playAudio('Ó')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">P</div>
+        <button onclick="playAudio('P')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">R</div>
+        <button onclick="playAudio('R')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">S</div>
+        <button onclick="playAudio('S')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ś</div>
+        <button onclick="playAudio('Ś')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">T</div>
+        <button onclick="playAudio('T')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">U</div>
+        <button onclick="playAudio('U')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">W</div>
+        <button onclick="playAudio('W')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Y</div>
+        <button onclick="playAudio('Y')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Z</div>
+        <button onclick="playAudio('Z')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ź</div>
+        <button onclick="playAudio('Ź')">Play</button>
+    </div>
+    
+    <div class="card">
+        <div class="letter">Ż</div>
+        <button onclick="playAudio('Ż')">Play</button>
+    </div>
+    
+    <script>
+        function playAudio(letter) {
+            var audio = new Audio(letter + '.mp3');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
